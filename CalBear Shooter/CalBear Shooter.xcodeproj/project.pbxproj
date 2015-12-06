@@ -16,6 +16,9 @@
 		858DBBD11C14E35B00765B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBCF1C14E35B00765B33 /* LaunchScreen.storyboard */; };
 		858DBBDC1C14E35B00765B33 /* CalBear_ShooterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DBBDB1C14E35B00765B33 /* CalBear_ShooterTests.swift */; };
 		858DBBE71C14E35B00765B33 /* CalBear_ShooterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858DBBE61C14E35B00765B33 /* CalBear_ShooterUITests.swift */; };
+		858DBBF81C14E4D800765B33 /* BulletSingle.png in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBF51C14E4D800765B33 /* BulletSingle.png */; };
+		858DBBF91C14E4D800765B33 /* EnemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBF61C14E4D800765B33 /* EnemyShip.png */; };
+		858DBBFA1C14E4D800765B33 /* PlayerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBF71C14E4D800765B33 /* PlayerShip.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		858DBBE21C14E35B00765B33 /* CalBear ShooterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalBear ShooterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		858DBBE61C14E35B00765B33 /* CalBear_ShooterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalBear_ShooterUITests.swift; sourceTree = "<group>"; };
 		858DBBE81C14E35B00765B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		858DBBF51C14E4D800765B33 /* BulletSingle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BulletSingle.png; sourceTree = "<group>"; };
+		858DBBF61C14E4D800765B33 /* EnemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyShip.png; sourceTree = "<group>"; };
+		858DBBF71C14E4D800765B33 /* PlayerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerShip.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		858DBBC11C14E35A00765B33 /* CalBear Shooter */ = {
 			isa = PBXGroup;
 			children = (
+				858DBBF51C14E4D800765B33 /* BulletSingle.png */,
+				858DBBF61C14E4D800765B33 /* EnemyShip.png */,
+				858DBBF71C14E4D800765B33 /* PlayerShip.png */,
 				858DBBC21C14E35A00765B33 /* AppDelegate.swift */,
 				858DBBC41C14E35A00765B33 /* GameScene.sks */,
 				858DBBC61C14E35A00765B33 /* GameScene.swift */,
@@ -235,8 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				858DBBF91C14E4D800765B33 /* EnemyShip.png in Resources */,
 				858DBBC51C14E35A00765B33 /* GameScene.sks in Resources */,
 				858DBBD11C14E35B00765B33 /* LaunchScreen.storyboard in Resources */,
+				858DBBFA1C14E4D800765B33 /* PlayerShip.png in Resources */,
+				858DBBF81C14E4D800765B33 /* BulletSingle.png in Resources */,
 				858DBBCE1C14E35B00765B33 /* Assets.xcassets in Resources */,
 				858DBBCC1C14E35A00765B33 /* Main.storyboard in Resources */,
 			);
