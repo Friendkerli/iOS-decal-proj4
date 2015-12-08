@@ -20,6 +20,7 @@
 		858DBBF91C14E4D800765B33 /* EnemyShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBF61C14E4D800765B33 /* EnemyShip.png */; };
 		858DBBFA1C14E4D800765B33 /* PlayerShip.png in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBF71C14E4D800765B33 /* PlayerShip.png */; };
 		858DBBFC1C15087600765B33 /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 858DBBFB1C15087600765B33 /* EndScene.sks */; };
+		8F6E56DF1C1629B3003F79ED /* EndScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6E56DE1C1629B3003F79ED /* EndScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +59,8 @@
 		858DBBF51C14E4D800765B33 /* BulletSingle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BulletSingle.png; sourceTree = "<group>"; };
 		858DBBF61C14E4D800765B33 /* EnemyShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnemyShip.png; sourceTree = "<group>"; };
 		858DBBF71C14E4D800765B33 /* PlayerShip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayerShip.png; sourceTree = "<group>"; };
-		858DBBFB1C15087600765B33 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = EndScene.sks; path = "CalBear Shooter/EndScene.sks"; sourceTree = "<group>"; };
+		858DBBFB1C15087600765B33 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
+		8F6E56DE1C1629B3003F79ED /* EndScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,6 @@
 		858DBBB61C14E35A00765B33 = {
 			isa = PBXGroup;
 			children = (
-				858DBBFB1C15087600765B33 /* EndScene.sks */,
 				858DBBC11C14E35A00765B33 /* CalBear Shooter */,
 				858DBBDA1C14E35B00765B33 /* CalBear ShooterTests */,
 				858DBBE51C14E35B00765B33 /* CalBear ShooterUITests */,
@@ -114,6 +115,8 @@
 				858DBBF61C14E4D800765B33 /* EnemyShip.png */,
 				858DBBF71C14E4D800765B33 /* PlayerShip.png */,
 				858DBBC21C14E35A00765B33 /* AppDelegate.swift */,
+				8F6E56DE1C1629B3003F79ED /* EndScene.swift */,
+				858DBBFB1C15087600765B33 /* EndScene.sks */,
 				858DBBC41C14E35A00765B33 /* GameScene.sks */,
 				858DBBC61C14E35A00765B33 /* GameScene.swift */,
 				858DBBC81C14E35A00765B33 /* GameViewController.swift */,
@@ -281,6 +284,7 @@
 			files = (
 				858DBBC71C14E35A00765B33 /* GameScene.swift in Sources */,
 				858DBBC91C14E35A00765B33 /* GameViewController.swift in Sources */,
+				8F6E56DF1C1629B3003F79ED /* EndScene.swift in Sources */,
 				858DBBC31C14E35A00765B33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +512,7 @@
 				858DBBED1C14E35B00765B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858DBBEE1C14E35B00765B33 /* Build configuration list for PBXNativeTarget "CalBear ShooterTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +521,7 @@
 				858DBBF01C14E35B00765B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		858DBBF11C14E35B00765B33 /* Build configuration list for PBXNativeTarget "CalBear ShooterUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +530,7 @@
 				858DBBF31C14E35B00765B33 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

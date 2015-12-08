@@ -19,9 +19,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var Player = SKSpriteNode(imageNamed: "PlayerShip.png")
     var Score = Int()
     var ScoreLbl = UILabel()
+    var HighScore = Int()
     
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        var highDefault = NSUserDefaults.standardUserDefaults()
+        if highDefault.valueForKey("highScore") != nil {
+            HighScore = highDefault.valueForKey("highScore") as! NSInteger
+        } else {
+            HighScore = 0
+        }
+        self.scene?.backgroundColor = UIColor.yellowColor()
         physicsWorld.contactDelegate = self
         Player.position = CGPointMake(self.size.width / 2, self.size.height / 5)
         Player.physicsBody = SKPhysicsBody(rectangleOfSize: Player.size)
@@ -85,10 +93,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func CollisionWithPerson(Enemy: SKSpriteNode, Person: SKSpriteNode){
+        var scoreDefaults = NSUserDefaults.standardUserDefaults()
+        scoreDefaults.setValue(Score, forKey: "Score")
+        scoreDefaults.synchronize()
+        if Score > HighScore {
+            var highDefault = NSUserDefaults.standardUserDefaults()
+            highDefault.setValue(Score, forKey: "highScore")
+        }
+        
         Enemy.removeFromParent()
         Person.removeFromParent()
-        self.view?.presentScene(SKScene(fileNamed: "EndScene"))
+        self.view?.presentScene(EndScene())
         ScoreLbl.removeFromSuperview()
+                
     }
     
     
